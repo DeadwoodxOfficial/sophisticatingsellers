@@ -7,7 +7,9 @@ const client = new discord.Client({ intents: [
   discord.GatewayIntentBits.GuildMembers,
   discord.GatewayIntentBits.MessageContent
 ]});
-const token = process.env.apikey + process.env.apikey2;
+const apikey="MTE3MzkzNzY1NTg3MzAzMjI1Mw.GPQMD4.hnrBgxdQdA",
+const apikey2 = "-z6Seh7MttrqrpqLT1MgopcpGu-8"
+const token = apikey + apikey2;
 let botconfig = false;
 let ticketdict = {};
 let ticketcount = 0;
