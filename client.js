@@ -6,8 +6,8 @@ const client = new discord.Client({ intents: [
   discord.GatewayIntentBits.GuildMembers,
   discord.GatewayIntentBits.MessageContent
 ]});
-const apikey="MTE3MzkzNzY1NTg3MzAzMjI1Mw.GPQMD4.hnrBgxdQdA";
-const apikey2 = "-z6Seh7MttrqrpqLT1MgopcpGu-8";
+const apikey="MTE3MzkzNzY1NTg3MzAzMjI1Mw.GPQMD4.hnrBgxdQdA-z";
+const apikey2 = "6Seh7MttrqrpqLT1MgopcpGu-8";
 const token = apikey + apikey2;
 let botconfig = false;
 let ticketdict = {};
@@ -29,6 +29,7 @@ const row = new discord.ActionRowBuilder()
 let botlogchannel = null;
 
 async function loginBot(){
+  console.log("ok")
   if (botconfig === false){
     await client.login(token);
     botconfig = true;

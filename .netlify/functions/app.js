@@ -6,8 +6,8 @@ const router = express.Router();
 const clientmodule = require("../../client.js");
 
 router.get("/",(req,res) =>{
-  res.json({'success':true});
   clientmodule.loginBot();
+  res.json({'success':true});
 })
 
 router.get("/check",(req, res) => {
