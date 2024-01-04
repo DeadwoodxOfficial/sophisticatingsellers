@@ -11,8 +11,5 @@
       "serverless-http": "^2.7.0",
       "netlify-cli": "12.17.2",
       "netlify-lamba": "^2.0.15"
-    },
-    "devDependencies": {
-      "netlify-lambda": "^2.0.6"
     }
 }
