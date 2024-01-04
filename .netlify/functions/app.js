@@ -3,7 +3,7 @@ const serverless = require("serverless-http");
 
 const app = express();
 const router = express.Router();
-const clientmodule = require("../../client.js");
+const clientmodule = require("./client.js");
 
 router.get("/",(req,res) =>{
   clientmodule.loginBot();
