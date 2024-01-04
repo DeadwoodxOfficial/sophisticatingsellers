@@ -1,6 +1,5 @@
 const discord = require("discord.js");
 const {ButtonBuilder, ButtonStyle,SlashCommandBuilder} = discord;
-require('dotenv').config();
 const client = new discord.Client({ intents: [
   discord.GatewayIntentBits.Guilds,
   discord.GatewayIntentBits.GuildMessages,
