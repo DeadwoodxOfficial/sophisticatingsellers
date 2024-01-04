@@ -4,12 +4,6 @@ const serverless = require("serverless-http");
 const app = express();
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.json({
-    hello: "hi!"
-  });
-});
-
 app.use(`/.netlify/functions/app`, router);
 const clientmodule = require("./client.js");
 
@@ -42,10 +36,6 @@ router.get("/getservers", async (req,res) =>{
   let response = clientmodule.getservers(idgiven).then((value) =>{
     res.json(value)
   })
-})
-
-app.listen(3000, () => {
-  console.log("Sophisticated Sellers API is running!");
 })
 
 module.exports = app;
