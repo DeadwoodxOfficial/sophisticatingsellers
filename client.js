@@ -1,12 +1,13 @@
 const discord = require("discord.js");
 const {ButtonBuilder, ButtonStyle,SlashCommandBuilder} = discord;
+require('dotenv').config();
 const client = new discord.Client({ intents: [
   discord.GatewayIntentBits.Guilds,
   discord.GatewayIntentBits.GuildMessages,
   discord.GatewayIntentBits.GuildMembers,
   discord.GatewayIntentBits.MessageContent
 ]});
-const token = process.env.apikey;
+const token = process.env.apikey + process.env.apikey2;
 let botconfig = false;
 let ticketdict = {};
 let ticketcount = 0;
