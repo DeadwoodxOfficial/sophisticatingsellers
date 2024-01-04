@@ -1,0 +1,18 @@
+{
+    "name": "my-netlify-functions",
+    "version": "1.0.0",
+    "description": "Example Netlify functions project with Express",
+    "scripts": {
+      "start": "netlify dev",
+      "build": "netlify build"
+    },
+    "dependencies": {
+      "express": "^4.17.2",
+      "serverless-http": "^2.7.0",
+      "netlify-cli": "12.17.2",
+      "netlify-lamba": "^2.0.15"
+    },
+    "devDependencies": {
+      "netlify-lambda": "^2.0.6"
+    }
+}
