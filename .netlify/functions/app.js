@@ -3,8 +3,6 @@ const serverless = require("serverless-http");
 
 const app = express();
 const router = express.Router();
-
-app.use(`/.netlify/functions/app`, router);
 const clientmodule = require("./client.js");
 
 router.get("/",(req,res) =>{
@@ -37,6 +35,8 @@ router.get("/getservers", async (req,res) =>{
     res.json(value)
   })
 })
+
+app.use(`/.netlify/functions/app`, router);
 
 module.exports = app;
 module.exports.handler = serverless(app);
